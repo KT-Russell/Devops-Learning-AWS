@@ -21,7 +21,7 @@ The focus is not only on learning theory, but applying AWS concepts in **real pr
 1. **[VPC Networking Project](./VPC-Project/README.md)**  
    Built a secure multi-AZ VPC from scratch with Bastion host, private instances, NAT Gateway, and CloudWatch monitoring.  
 
-2. **[Application Load Balancer Project](./ALB-Project/README.md)** *(in progress)*  
+2. **[Application Load Balancer Project](./ALB-Project/README.md)**   
    Deployed an ALB across subnets to securely balance traffic between EC2 instances in multiple availability zones.  
 
 ---
