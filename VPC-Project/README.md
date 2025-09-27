@@ -17,11 +17,12 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 ## ️VPC Architecture Diagram  
 
 ![VPC Architecture](./images/VPC-Architecture.png)  
+
 *This diagram shows the VPC setup: a Bastion host in the public subnet, two private instances (one in each AZ), internet access controlled by IGW/NAT, and CloudWatch monitoring integrated for SSH login events.*  
 
 ---
 
-##️ What I Built (At a Glance)
+## What I Built (At a Glance)
 
 | Component        | Configuration |
 |------------------|--------------|
@@ -59,7 +60,7 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 - Private subnets should not be internet-reachable directly, but still need outbound access (updates, package installs).  
 - NAT solves this — private instances can initiate traffic to the internet while staying hidden.  
 
-![VPC Internet Gateway](./images/aws-vpc/VPC1-IGW.png)  
+![VPC Internet Gateway](./images/VPC1-IGW.png)  
 ![VPC NAT Gateway](./images/VPC1-NATGW.png)  
 
 ---
@@ -104,7 +105,7 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 
 **Reasoning:** This models a secure admin pattern: Bastion is the only way in, while private workloads remain shielded.  
 
-![EC2 Bastion](./images/aws-vpc/EC2-Bastion.png)  
+![EC2 Bastion](./images/EC2-Bastion.png)  
 ![EC2 Private Instance A](./images/EC2-Priv.png)  
 ![EC2 Private Instance B](./images/EC2-Priv2.png)  
 
