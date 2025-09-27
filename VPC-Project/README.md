@@ -88,7 +88,7 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 - Restricting SSH at the source prevents brute force attacks.  
 - Private instances are not exposed to the internet at all — only reachable via Bastion.  
 
-![Bastion SG](./images/Bastion-SG.png)  
+![Bastion SG](./images/BastionSG.png)  
 ![Private SG](./images/PrivateSG.png)  
 
 ---
