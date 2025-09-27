@@ -88,7 +88,7 @@ To test how everything worked, I also deployed a **Bastion host** for secure SSH
 
   
 
-![Subnets](./images/1.Subnets .png)   
+![Subnets](./images/1.Subnets.png)   
 
   
 
@@ -114,7 +114,7 @@ To test how everything worked, I also deployed a **Bastion host** for secure SSH
 
   
 
-![Public Route Table](./images/2.PublicRouteTable- igw.png)   
+![Public Route Table](./images/2.PublicRouteTable-igw.png)
 
 ![Private Route Table A](./images/3.PrivateRouteTableA.png)   
 
@@ -204,12 +204,11 @@ To test how everything worked, I also deployed a **Bastion host** for secure SSH
 
   
 
-![Launch Template](./images/9. ALB-Launch-Template-Confirmed.png)   
+![Launch Template](./images/9.ALB-Launch-Template-Confirmed.png)
 
 ![Launch Template User Data](./images/10.Launch-Template-UserDataScript.png)   
 
-![ASG Desired Capacity](./images/11.ASG-DesiredCapacity .png)   
-
+![ASG Desired Capacity](./images/11.ASG-DesiredCapacity.png)
   
 
 **User Data Script**:   
@@ -265,8 +264,7 @@ The target group (ALB-TG) was configured to perform health checks on "/" - the r
 
   
 
-![ALB HTTPS Listener](./images/12.HTTPS Listener w: valid SSL certificate.png)   
-
+![ALB HTTPS Listener](./images/12.HTTPS-Listener-valid-SSL-certificate.png)
 ![ALB Target Group](./images/13.ALB-TG-Health.png)   
 
  
