@@ -16,7 +16,7 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 
 ## ️VPC Architecture Diagram  
 
-![VPC Architecture](./images/aws-vpc/VPC-Architecture.png)  
+![VPC Architecture](./images/VPC-Architecture.png)  
 *This diagram shows the VPC setup: a Bastion host in the public subnet, two private instances (one in each AZ), internet access controlled by IGW/NAT, and CloudWatch monitoring integrated for SSH login events.*  
 
 ---
@@ -45,8 +45,8 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 
 **Reasoning:** Segregating workloads between public and private subnets enforces least privilege and mirrors production design.  
 
-![VPC Subnet](./images/aws-vpc/VPC-Subnet.png)  
-![VPC AZ1](./images/aws-vpc/VPC-AZ1.png)  
+![VPC Subnet](./images/VPC-Subnet.png)  
+![VPC AZ1](./images/VPC-AZ1.png)  
 
 ---
 
@@ -60,7 +60,7 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 - NAT solves this — private instances can initiate traffic to the internet while staying hidden.  
 
 ![VPC Internet Gateway](./images/aws-vpc/VPC1-IGW.png)  
-![VPC NAT Gateway](./images/aws-vpc/VPC1-NATGW.png)  
+![VPC NAT Gateway](./images/VPC1-NATGW.png)  
 
 ---
 
@@ -72,8 +72,8 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 - Public subnets talk to the internet directly.  
 - Private subnets reach the internet only via NAT.  
 
-![VPC Public Route Table](./images/aws-vpc/VPC1-PubRT.png)  
-![VPC Private Route Table](./images/aws-vpc/VPC1-PrivRT.png)  
+![VPC Public Route Table](./images/VPC1-PubRT.png)  
+![VPC Private Route Table](./images/VPC1-PrivRT.png)  
 
 ---
 
@@ -87,8 +87,8 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 - Restricting SSH at the source prevents brute force attacks.  
 - Private instances are not exposed to the internet at all — only reachable via Bastion.  
 
-![Bastion SG](./images/aws-vpc/Bastion-SG.png)  
-![Private SG](./images/aws-vpc/PrivateSG.png)  
+![Bastion SG](./images/Bastion-SG.png)  
+![Private SG](./images/PrivateSG.png)  
 
 ---
 
@@ -105,8 +105,8 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 **Reasoning:** This models a secure admin pattern: Bastion is the only way in, while private workloads remain shielded.  
 
 ![EC2 Bastion](./images/aws-vpc/EC2-Bastion.png)  
-![EC2 Private Instance A](./images/aws-vpc/EC2-Priv.png)  
-![EC2 Private Instance B](./images/aws-vpc/EC2-Priv2.png)  
+![EC2 Private Instance A](./images/EC2-Priv.png)  
+![EC2 Private Instance B](./images/EC2-Priv2.png)  
 
 ---
 
@@ -126,7 +126,7 @@ The purpose of this build was to gain hands-on experience in how AWS networking 
 
 **Reasoning:** Monitoring SSH activity gives visibility into login attempts. Even when defaults differ across OS versions, observability can be adapted with audit logs.  
 
-![CloudWatch Metrics](./images/aws-vpc/Cloudwatch-metrics.png)  
+![CloudWatch Metrics](./images/Cloudwatch-metrics.png)  
 
 ---
 
