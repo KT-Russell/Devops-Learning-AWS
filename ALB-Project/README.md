@@ -88,7 +88,7 @@ To test how everything worked, I also deployed a **Bastion host** for secure SSH
 
   
 
-![Subnets](./images/1.Subnets.png)   
+![Subnets](./images/1.Subnets .png)   
 
   
 
@@ -114,7 +114,7 @@ To test how everything worked, I also deployed a **Bastion host** for secure SSH
 
   
 
-![Public Route Table](./images/2.PublicRouteTable-igw.png)   
+![Public Route Table](./images/2.PublicRouteTable- igw.png)   
 
 ![Private Route Table A](./images/3.PrivateRouteTableA.png)   
 
@@ -158,7 +158,7 @@ To test how everything worked, I also deployed a **Bastion host** for secure SSH
 
  
 
-- **ALB SG (demo-lb-sg):**   
+- **ALB SG (LB-SG):**   
 
   - Inbound: 80/443 from `0.0.0.0/0`   
 
@@ -204,11 +204,11 @@ To test how everything worked, I also deployed a **Bastion host** for secure SSH
 
   
 
-![Launch Template](./images/9.ALB-Launch-Template-Confirmed.png)   
+![Launch Template](./images/9. ALB-Launch-Template-Confirmed.png)   
 
 ![Launch Template User Data](./images/10.Launch-Template-UserDataScript.png)   
 
-![ASG Desired Capacity](./images/11.ASG-DesiredCapacity.png)   
+![ASG Desired Capacity](./images/11.ASG-DesiredCapacity .png)   
 
   
 
@@ -225,7 +225,7 @@ systemctl start httpd
 
 systemctl enable httpd 
 
-echo "<h1>Hello Kamran from $(hostname -f) </h1>" > /var/www/html/index.html 
+echo "<h1>Hello Kamran from $(hostname -f) </h1>" > /var/www/html/index.html``` 
 
  
 
