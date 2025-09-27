@@ -227,7 +227,7 @@ systemctl enable httpd
 
 echo "<h1>Hello Kamran from $(hostname -f) </h1>" > /var/www/html/index.html``` 
 
- 
+``` 
 
 Configured an **Auto Scaling Group**:   
 
@@ -265,13 +265,13 @@ The target group (ALB-TG) was configured to perform health checks on "/" - the r
 
   
 
-![ALB HTTPS Listener](./images/12.HTTPS-Listener-valid-SSL-certificate.png)   
+![ALB HTTPS Listener](./images/12.HTTPS Listener w: valid SSL certificate.png)   
 
 ![ALB Target Group](./images/13.ALB-TG-Health.png)   
 
  
 
-*Reasoning:** ALB provides fault tolerance + HTTPS termination.   
+**Reasoning:** ALB provides fault tolerance + HTTPS termination.   
 
   
 
@@ -383,7 +383,7 @@ SSH into Private Instance B & did a connectivity check
 
  
 
-![Stop & Restart Apache](./images/24.Stop&RestartHttpd.png)   
+![Stop & Restart Apache](./images/24.Stop&RestartHttpd.png)
 
 ![Health Check Before Test](./images/25.HealthCheckbeforetest.png)   
 
